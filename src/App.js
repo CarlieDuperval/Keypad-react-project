@@ -6,6 +6,11 @@ import './App.css';
 function App() {
   
   const [string ,setString] = useState('')
+  const checkCount = (num)=> {
+    if (string.length < 4){
+  setString(string + num)
+}
+}
 
   const handleBackButton = () => {
     setString(string.slice(0, string.length - 1))
@@ -24,7 +29,7 @@ const validateButton = () => {
         <h2>{string}</h2>
         </section>
         <section>
-       
+       {/* <button onClick={()=>checkCount('1')</button>  */}
         <button onClick={()=>{
           if(string.length < 4)
           setString(string + '1')}}>1</button> 
@@ -69,7 +74,7 @@ const validateButton = () => {
         <button onClick={validateButton}>✅</button>
         </section>
         <section>
-        <button onClick={()=>setString(0)}>🔄</button>
+        <button onClick={()=>setString(null)}>🔄</button>
         </section>
         </header>
     </div>
