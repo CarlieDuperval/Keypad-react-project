@@ -25,45 +25,25 @@ const validateButton = () => {
     <div className="App">
       <header className="App-header">
         <section class="w3=container">
-        <h1>Jayden Keypad</h1>
+        <h1>Keypad</h1>
         <h2>{string}</h2>
         </section>
         <section>
-       {/* <button onClick={()=>checkCount('1')</button>  */}
-        <button onClick={()=>{
-          if(string.length < 4)
-          setString(string + '1')}}>1</button> 
-        <button onClick={()=>{
-          if(string.length < 4)
-          setString(string + '2')}}>2</button>
-        <button onClick={()=>{
-          if(string.length < 4)
-          setString(string + '3')}}>3</button>
-        
+        <button onClick={()=>checkCount('1')}>1</button> 
+        <button onClick={()=>checkCount('2')}>2</button>
+        <button onClick={()=>checkCount('3')}>3</button>
         </section>
 
         <section>
-        <button onClick={()=>{
-          if(string.length < 4)
-          setString(string + '4')}}>4</button>
-        <button onClick={()=>{
-          if(string.length < 4)
-          setString(string + '5')}}>5</button>
-        <button onClick={()=>{
-          if(string.length < 4)
-          setString(string + '6')}}>6</button>
+        <button onClick={()=>checkCount('4')}>4</button>
+        <button onClick={()=>checkCount('5')}>5</button>
+        <button onClick={()=>checkCount('6')}>6</button>
         </section>
 
         <section>
-        <button onClick={()=>{
-          if(string.length < 4)
-          setString(string + '7')}}>7</button>
-        <button onClick={()=>{
-          if(string.length < 4)
-          setString(string + '8')}}>8</button>
-        <button onClick={()=>{
-          if(string.length < 4)
-          setString(string + '9')}}>9</button>
+        <button onClick={()=>checkCount('7')}>7</button>
+        <button onClick={()=>checkCount('8')}>8</button>
+        <button onClick={()=>checkCount('9')}>9</button>
         </section>
 
         <section>
@@ -82,3 +62,14 @@ const validateButton = () => {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+         
